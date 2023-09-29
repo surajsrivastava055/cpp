@@ -44,7 +44,7 @@ delete s3;
 
 
 Student arr[2]={s1,s2};
-Student* heapArr[1]={s3,s4};
+Student* heapArr[2]={s3,s4};
 
 
 }

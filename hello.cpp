@@ -5,5 +5,5 @@ int main(){
 
 
     
-    std:cout<<"hello cpp";
+    std::cout<<"hello cpp";
 }
