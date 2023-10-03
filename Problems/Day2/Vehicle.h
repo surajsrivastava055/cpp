@@ -42,10 +42,7 @@ public:
 
     int id() const { return _id; }
     void setId(int id) { _id = id; }
-
     std::string brand() const { return _brand; }
-
-
     float price() const { return _price; }
 
 };
