@@ -42,7 +42,7 @@ Customer(const Customer&)=default;
     ~Customer() {
 
             std::cout<<
-            "customer with id"<<customerID()<<"\tdestroyed\n";
+            "customer with id\t"<<customerID()<<"\tdestroyed\n";
             }
     
 };

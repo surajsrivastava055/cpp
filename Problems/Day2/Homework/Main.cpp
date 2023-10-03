@@ -11,21 +11,26 @@ Customer* container[5];
 
 CustomerCreator(container);
 
-std::vector<Customer*> list= CreditInRange100_200(container);
+std::cout<<"\nCustomer with credit range 100-200\n\n";
 
-for(int i=0; i<list.size() ;i++)
+std::vector<Customer*> list1= CreditInRange100_200(container);
+
+for(int i=0; i<list1.size() ;i++)
 {
-std::cout<<*container<<std::endl;
+std::cout<<*list1[i]<<std::endl;
 }
 
-std::vector<Customer*> list= TypeOfCustomer(container, Type::PREMIUM);
+std::cout<<"\nCustomer with Type premium \n\n";
 
-for(int i=0; i<list.size() ;i++)
+std::vector<Customer*> list2= TypeOfCustomer(container, Type::PREMIUM);
+
+for(int i=0; i<list2.size() ;i++)
 {
-std::cout<<*container<<std::endl;
+std::cout<<*list2[i]<<std::endl;
 }
+std::cout<<"\nAverage credit of premium type customers:\t";
 
-std::cout<<AverageOfCertainType(container, Type::PREMIUM);
+std::cout<<AverageOfCertainType(container, Type::PREMIUM)<<std::endl<<std::endl;
 
 FreeMemory(container);
 

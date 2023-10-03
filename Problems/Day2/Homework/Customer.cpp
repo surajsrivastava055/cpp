@@ -8,10 +8,10 @@ Customer::Customer(int _customerID, std::string _customerName, Type _c_type, int
 }
 
 std::ostream &operator<<(std::ostream &os, const Customer &rhs) {
-    os << "_customerID: " << rhs._customerID
-       << " _customerName: " << rhs._customerName
-       << " _c_type: " << DisplayEnum(rhs._c_type)
-       << " _customerStoreCredits: " << rhs._customerStoreCredits;
+    os << " CustomerID : " << rhs._customerID
+       << " \t\tCustomer Name : " << rhs._customerName
+       << " \tCustomer type : " << DisplayEnum(rhs._c_type)
+       << " \tCustomer Store Credits: " << rhs._customerStoreCredits;
     return os;
 }
 
