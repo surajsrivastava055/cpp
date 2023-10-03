@@ -54,7 +54,7 @@ std::vector<Customer *> TypeOfCustomer(Customer *container[5], Type type)
    return list;
 }
 
-flaot AverageOfCertainType(Customer *container[5], Type type)
+float AverageOfCertainType(Customer *container[5], Type type)
 {
     float avg=0.0f;
     int count=0;

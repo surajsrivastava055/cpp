@@ -8,7 +8,7 @@ void CustomerCreator(Customer* container[5]);
 
 std::vector<Customer*> CreditInRange100_200(Customer* container[5]);
 std::vector<Customer*> TypeOfCustomer(Customer* container[5], Type type);
-flaot AverageOfCertainType(Customer* container[5], Type type);
+float AverageOfCertainType(Customer* container[5], Type type);
 
 void FreeMemory(Customer * container[5]);
 
