@@ -7,6 +7,7 @@ int main(){
 Car* container[3];// reserving 24 bytes of memoery  null pointer in the start
 
 ObjectCreator(container);
+CallCalculateTax(container);
 //AveragePrice(container);
 
 std::cout<<"object created"<<std::endl<<"average price of a car"<<AveragePrice(container);

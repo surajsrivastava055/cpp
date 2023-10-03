@@ -28,7 +28,7 @@ return total;
 
 void CallCalculateTax(Car* container[3]){
 for( int i =0; i<3 ; i++){
-std::cout<<(container[i])->CalculateTax()<<"\n";
+std::cout<< "Tax for car with id"<<(container[i])->id()<<"\t\t"<<(container[i])->CalculateTax()<<"\t\t";
 }
 
 }
