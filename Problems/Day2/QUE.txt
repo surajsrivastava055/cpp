@@ -1,0 +1,11 @@
+- _id which is an alphanumeric string
+- _brand which is a string
+- _type which is either CAR, BIKE or OTHER
+- _price which is a float value.
+- parameterized constructor with all parameters
+- parameterized constructor without price parameter
+- a copy constructor to copy the object
+- create the following functionalities
+- a function to create the 3 objects on the heap
+- a function to find the average price of all objects
+Demonstrate all functionalities in Main. cpp
