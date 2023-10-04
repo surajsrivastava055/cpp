@@ -6,9 +6,9 @@
 class Manager:public Employee
 {
 private:
-    /* data */
+    
 public:
-    Manager(/* args */) =default;
+    Manager() =default;
 
     void applyForLeave()
     {
@@ -27,7 +27,7 @@ public:
     ~Manager() {
 
 
-        std::cout<<"manager destroyed";
+        std::cout<<"manager destroyed\n";
     }
 };
 

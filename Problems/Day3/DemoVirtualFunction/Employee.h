@@ -21,8 +21,8 @@ public:
     void Display(){
         std::cout<<"employee display called\n";
     }
-    ~Employee() {
-        std::cout<<"employee destroyed\n";
+    virtual ~Employee() {
+        std::cout<<"employee destroyed\n";//for upcasting this is needded to free the memory mark it virtual
     }
 };
 

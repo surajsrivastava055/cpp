@@ -16,5 +16,7 @@ std::cout<<"for manager object\n";
 e[1]->applyForLeave();
 e[1]->payTax();
 
+delete e[0];
+delete e[1];
 
 }
