@@ -6,17 +6,17 @@ int main()
     Employee * e1 = new Employee();
     Employee * m1 =new Manager();
 
-Employee *e[2]{e1,m1};
+Employee *arr[2]{e1,m1};
 std::cout<<"for employee object\n";
-e[0]->applyForLeave();
-e[0]->payTax();
+arr[0]->applyForLeave();
+arr[0]->payTax();
 
 std::cout<<"for manager object\n";
 
-e[1]->applyForLeave();
-e[1]->payTax();
+arr[1]->applyForLeave();
+arr[1]->payTax();
 
-delete e[0];
-delete e[1];
+delete arr[0];
+delete arr[1];
 
 }
