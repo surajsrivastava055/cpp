@@ -1,13 +1,15 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 #include<iostream>
+#include "Employee.h"
 class Employee
 {
 private:
     /* data */
 public:
     Employee() =default;
-    void applyForLeave()
+   
+void applyForLeave()
     {
         std::cout<<"employee applies for the leave\n";
 
