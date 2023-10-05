@@ -31,6 +31,11 @@ public:
     DepartmentType type() const { return _type; }
 
     Project* project() const { return _project; }
+
+    friend std::ostream &operator<<(std::ostream &os, const Employee &rhs);
+
 };
+
+std::string DisplayNum(const DepartmentType value);
 
 #endif // EMPLOYEE_H

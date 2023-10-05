@@ -2,6 +2,17 @@
 #include "DepartmentType.h"
 #include "Employee.h"
 
+bool CheckNull(Employee *arr[3])
+{
+    bool flag=true;
+    for(int i=0;i<3;i++){
+        if(arr[i]!=nullptr){
+            return false;
+        }
+    }
+    return flag;
+}
+
 void CreateObjects(Employee *arr1[3])
 {
     arr1[0]=new Employee("e101","gyan",98765.0f,DepartmentType::DEVELOPEMENT,new Project("CVV",70,100000));
@@ -12,6 +23,9 @@ void CreateObjects(Employee *arr1[3])
 
 Employee *EmployeeWithHighestSalary(Employee *arr1[3])
 {
+    if(CheckNull(arr1)){
+        throw std::runtime_error("Data is empty");
+    }
     Employee* result=nullptr;
     float max=arr1[0]->salary();
     for(int i=1;i<3;i++){
@@ -23,8 +37,12 @@ Employee *EmployeeWithHighestSalary(Employee *arr1[3])
     return result;
 }
 
+
 int CountEmployeeWithGivenDepartment(Employee *arr1[3],DepartmentType dept)
 {
+    if(CheckNull(arr1)){
+        throw std::runtime_error("Data is Empty");
+    }
     int count=0;
     for(int i=0;i<3;i++){
         if((arr1[i]->type())==dept){

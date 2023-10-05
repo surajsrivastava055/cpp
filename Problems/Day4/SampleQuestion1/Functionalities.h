@@ -2,7 +2,12 @@
 #define FUNCTIONALITIES_H
 
 #include "Employee.h"
-#include "Project.h"
+
+/*
+    A function to check  if all positions of the array are nullptr.
+*/
+
+bool CheckNull(Employee* arr[3]);
 
 /*
     A funtion to create 3 objects of Employees in an array.
