@@ -5,15 +5,13 @@
 #include "Project.h"
 
 /*
-    A funtion to create 3 objects of project in an array.
-    Also, create 3 objects of Employees in a seprate array.
-    Link one Project to one Employee.
+    A funtion to create 3 objects of Employees in an array.
 
-    Input : 2 array (1 for Employee and 1 for Project)
+    Input : 1 array (1 for Employee)
     Output :void
 */
 
-void CreateObjects(Employee* arr1[3], Project* arr2[3]);
+void CreateObjects(Employee* arr1[3]);
 
 /*
     A function to return the pointer to the employee with the highest salary
@@ -32,7 +30,7 @@ int CountEmployeeWithGivenDepartment(Employee* arr1[3],DepartmentType dept);
     Find the average_budget for all projects
 */
 
-float AverageBudget(Project* arr2[3]);
+float AverageBudget(Employee* arr2[3]);
 
 /*
     A function to deallocate the memory.

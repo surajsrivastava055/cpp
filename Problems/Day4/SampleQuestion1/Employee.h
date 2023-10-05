@@ -18,6 +18,7 @@ public:
     Employee(const Employee&)=delete;
     Employee()=delete;
     ~Employee() {
+        delete _project;
         std::cout<<"Employee ID With :"<<_id<<"is destroyed \n";
     }
 
