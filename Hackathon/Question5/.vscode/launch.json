@@ -9,8 +9,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/workspaces/cpp/Hackathon/Question4",
-      "program": "/workspaces/cpp/Hackathon/Question4/a.out",
+      "cwd": "/workspaces/cpp/Hackathon/Question5",
+      "program": "/workspaces/cpp/Hackathon/Question5/a.out",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
