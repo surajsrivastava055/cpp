@@ -11,6 +11,7 @@ private:
  float _price;
 public:
     Vehicle(const Vehicle&)= default;
+
     Vehicle(
      int id,
      std::string _brand,
@@ -26,7 +27,7 @@ public:
 
 
     virtual float CalculateTax()=0;
-    ~Vehicle() {}
+    virtual ~Vehicle() {}
 
     int id() const { return _id; }
 

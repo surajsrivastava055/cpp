@@ -5,7 +5,8 @@
 
 int main(){
 
-Vehicle* arr[3];
+Vehicle* arr[3]={nullptr};
+
 CreateObjects(arr);
 AveragePrice(arr);
 

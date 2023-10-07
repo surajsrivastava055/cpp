@@ -9,13 +9,13 @@ private:
 public:
     Employee() =default;
    
-void applyForLeave()
+    virtual void applyForLeave()
     {
         std::cout<<"employee applies for the leave\n";
 
     }
 
-   virtual void payTax()
+    virtual void payTax()
     {
         std::cout<<"employee pays the tax\n";
     }
